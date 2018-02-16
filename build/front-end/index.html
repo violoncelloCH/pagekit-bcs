@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Uikit And Pastheme Style -->
+    <link rel="stylesheet" href="../assets/css/theme.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/js/uikit.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        if ($('.pas-navbar-transparent')) {
+          $('.pas-navbar-transparent').css('background-color' , 'transparent')
+        }
+
+        $(window).scroll(function(event) {
+
+          var heroHeight = $('#pas-hero').height();
+          var scroll = $(window).scrollTop();
+
+          if (scroll > heroHeight) {
+            $('.pas-navbar-transparent').addClass('uk-animation-fade').css('background-color' , '#5628b4')
+          }else{
+            $('.pas-navbar-transparent').css('background-color' , 'transparent')
+          }
+        });
+
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="uk-navbar-container pas-navbar-transparent" uk-sticky>
+      <div class="uk-container">
+          <div uk-navbar="" class="uk-navbar">
+              <div class="uk-navbar-left">
+
+                  <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+
+                  <ul class="uk-navbar-nav">
+                      <li class="uk-active"><a href="#">Active</a></li>
+                      <li>
+                          <a href="#" class="" aria-expanded="false">Parent</a>
+                          <div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left uk-animation-fade uk-animation-enter" style="left: 173px; top: 80px; animation-duration: 200ms;">
+                              <ul class="uk-nav uk-navbar-dropdown-nav">
+                                  <li class="uk-active"><a href="#">Active</a></li>
+                                  <li class="uk-parent">
+                                      <a href="#">Parent</a>
+                                      <ul class="uk-nav-sub">
+                                          <li><a href="#">Sub item</a></li>
+                                          <li><a href="#">Sub item</a></li>
+                                      </ul>
+                                  </li>
+                                  <li class="uk-nav-header">Header</li>
+                                  <li><a href="#"><span class="uk-margin-small-right uk-icon" uk-icon="icon: table"></span> Item</a></li>
+                                  <li><a href="#"><span class="uk-margin-small-right uk-icon" uk-icon="icon: thumbnails"></span> Item</a></li>
+                                  <li class="uk-nav-divider"></li>
+                                  <li><a href="#"><span class="uk-margin-small-right uk-icon" uk-icon="icon: trash"></span> Item</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li><a href="#">Item</a></li>
+                      <li><a href="#">Item</a></li>
+                  </ul>
+
+              </div>
+              <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                  <li>
+                    <a id="pas-toggle" href="#pas-menu" uk-toggle>
+                      <i class="icon-ghost uk-margin-small-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+  <div id="pas-hero" class="uk-background-blend-overlay uk-background-primary uk-background-cover uk-height-viewport uk-panel uk-flex uk-flex-center uk-flex-middle uk-light" style="background-image: url(https://static.pexels.com/photos/516541/pexels-photo-516541.jpeg);">
+    <p class="uk-h4">Lighten</p>
+  </div>
+
+  <p class="uk-container">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus, eros ac eleifend pretium, tortor lorem suscipit est, a pharetra felis mauris ut lorem. Mauris nulla dolor, pharetra vel mi quis, aliquam varius arcu. Vestibulum fringilla luctus laoreet. Vivamus tortor magna, sagittis id augue id, venenatis congue ex. Integer tempus ornare fermentum. Maecenas sit amet sodales nunc. Nulla ac mauris dolor. Maecenas mauris turpis, mollis in justo eget, porttitor efficitur mauris. Sed feugiat consectetur massa eget semper. Nulla a molestie odio. In semper tortor ac volutpat vehicula. Quisque quis porta risus. Aliquam sollicitudin nisl ac metus vehicula, bibendum elementum lacus consectetur.
+
+  Vivamus pulvinar viverra porttitor. Phasellus elementum augue vel libero pharetra, ac scelerisque lorem laoreet. Praesent eros tellus, porttitor eu tellus eu, mollis ultrices risus. Ut in semper orci, sit amet vulputate elit. Aenean ullamcorper luctus nulla a aliquam. Aliquam lacinia sed sapien quis posuere. Nam imperdiet pellentesque auctor. Phasellus ac tortor accumsan augue pellentesque tempor porta vel erat. Nullam placerat eu ligula in scelerisque. Proin congue ipsum ac orci cursus pulvinar. Aenean iaculis aliquam arcu non vulputate. Vivamus posuere consectetur fermentum. Maecenas eros tortor, lacinia vel convallis at, molestie a nibh. Cras nec cursus libero.
+
+  Maecenas aliquam dictum congue. Maecenas at quam nec metus euismod porttitor. Ut dapibus dolor dolor, vitae tempor nisl tempus nec. Suspendisse posuere elit eget justo volutpat hendrerit. Fusce sodales dictum sapien vitae viverra. Nam ipsum sapien, aliquet eget tincidunt in, consequat id leo. Ut sit amet congue erat. Suspendisse bibendum metus non semper eleifend.
+
+  Nam sed imperdiet massa. Aliquam neque odio, pharetra non aliquet semper, varius sed nisi. Nunc at molestie lorem. Donec et pulvinar eros, vel mattis odio. Pellentesque nec venenatis felis. In aliquet dui nisl, tincidunt placerat diam tempor quis. Donec hendrerit ut arcu a dignissim. Duis dignissim placerat maximus. Aliquam erat volutpat. Quisque congue enim id turpis lobortis, sit amet pellentesque est rutrum. Morbi quis molestie mi. Donec ipsum quam, pellentesque ut iaculis at, congue sed ex. Quisque rhoncus arcu ac lacus volutpat ornare. Maecenas eleifend ullamcorper enim sed pretium.
+
+  Nullam posuere sagittis elit, nec porttitor augue faucibus sed. Proin euismod efficitur nisl et sollicitudin. Morbi mauris odio, volutpat non tellus mollis, fermentum mollis ligula. Fusce quis lobortis nisl. Etiam feugiat ante vel pulvinar eleifend. Curabitur est lacus, feugiat non quam eget, fringilla luctus magna. Donec aliquet nec nibh non aliquam. Praesent id urna eget justo suscipit finibus. Proin at tellus non ex porta consequat. Cras id felis ultricies, laoreet mauris in, faucibus diam. Mauris luctus augue nec tellus rutrum, ut vulputate nunc porttitor. Sed ac tellus ut justo bibendum fringilla. Proin nunc mi, pretium sed malesuada ac, dignissim nec ante.
+  </p>
+
+  <footer class="uk-background-primary uk-light uk-padding-small">
+    <p class="uk-margin-remove">
+      Pagekit
+    </p>
+  </footer>
+
+  <div id="pas-menu" class="offcanvas-nav-primary" uk-offcanvas="flip: true;mode: reveal;">
+      <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+              <li class="uk-active"><a href="#">Active</a></li>
+              <li class="uk-parent">
+                  <a href="#">Parent</a>
+                  <ul class="uk-nav-sub">
+                      <li><a href="#">Sub item</a></li>
+                      <li><a href="#">Sub item</a></li>
+                  </ul>
+              </li>
+              <li class="uk-nav-header">Header</li>
+              <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+              <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+          </ul>
+      </div>
+  </div>
+
+  </body>
+</html>
