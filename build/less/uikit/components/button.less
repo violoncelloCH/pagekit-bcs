@@ -26,7 +26,7 @@
 @button-small-line-height:                      @global-control-small-height;
 @button-large-line-height:                      @global-control-large-height;
 
-@button-font-size:                              '.675rem';
+@button-font-size:                              @global-font-size;
 @button-small-font-size:                        @global-small-font-size;
 @button-large-font-size:                        @global-medium-font-size;
 
@@ -116,11 +116,10 @@
     vertical-align: middle;
     font-size: @button-font-size;
     /* 8 */
-    line-height: 37px;
+    line-height: @button-line-height;
     /* 9 */
     text-align: center;
     /* 10 */
-    font-weight: 700;
     text-decoration: none;
     .hook-button;
 }
@@ -164,9 +163,9 @@
  */
 
 .uk-button-default {
-    border: 2px solid #eee;
-    background-color: transparent;
-    color: black;
+    background-color: @button-default-background;
+    color: @button-default-color;
+    .hook-button-default;
 }
 
 /* Hover + Focus */
@@ -190,24 +189,24 @@
  */
 
 .uk-button-primary {
-  border: 2px solid @pas-global-color-primary;
-  background-color: transparent;
-  color: @pas-global-color-primary;
+    background-color: @button-primary-background;
+    color: @button-primary-color;
+    .hook-button-primary;
 }
 
 /* Hover + Focus */
 .uk-button-primary:hover,
 .uk-button-primary:focus {
-    background-color: @pas-global-color-primary;
-    color: white;
+    background-color: @button-primary-hover-background;
+    color: @button-primary-hover-color;
     .hook-button-primary-hover;
 }
 
 /* OnClick + Active */
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
-    background-color: @pas-global-color-primary;
-    color: white;
+    background-color: @button-primary-active-background;
+    color: @button-primary-active-color;
     .hook-button-primary-active;
 }
 
@@ -216,15 +215,15 @@
  */
 
 .uk-button-secondary {
-  border: 2px solid @pas-global-color-secondary;
-  background-color: transparent;
-  color: @pas-global-color-secondary;
+    background-color: @button-secondary-background;
+    color: @button-secondary-color;
+    .hook-button-secondary;
 }
 
 /* Hover + Focus */
 .uk-button-secondary:hover,
 .uk-button-secondary:focus {
-    background-color: @pas-global-color-secondary;
+    background-color: @button-secondary-hover-background;
     color: @button-secondary-hover-color;
     .hook-button-secondary-hover;
 }
@@ -232,7 +231,7 @@
 /* OnClick + Active */
 .uk-button-secondary:active,
 .uk-button-secondary.uk-active {
-    background-color: @pas-global-color-secondary;
+    background-color: @button-secondary-active-background;
     color: @button-secondary-active-color;
     .hook-button-secondary-active;
 }
@@ -242,15 +241,15 @@
  */
 
 .uk-button-danger {
-    border: 2px solid @pas-global-color-success;
-    background-color: transparent;
-    color: @pas-global-color-success;
+    background-color: @button-danger-background;
+    color: @button-danger-color;
+    .hook-button-danger;
 }
 
 /* Hover + Focus */
 .uk-button-danger:hover,
 .uk-button-danger:focus {
-    background-color: @pas-global-color-success;
+    background-color: @button-danger-hover-background;
     color: @button-danger-hover-color;
     .hook-button-danger-hover;
 }
@@ -258,35 +257,44 @@
 /* OnClick + Active */
 .uk-button-danger:active,
 .uk-button-danger.uk-active {
-    background-color: @pas-global-color-success;
+    background-color: @button-danger-active-background;
     color: @button-danger-active-color;
     .hook-button-danger-active;
 }
 
 /*
- * Danger
+ * muted
  */
 
-.uk-button-warning {
-    border: 2px solid @pas-global-color-warning;
-    background-color: transparent;
-    color: @pas-global-color-warning;
-}
+.pas-button-white{
+  /* 1 */
+  margin: 0;
+  color: #eee;
+  /* 2 */
+  border: 1px solid #eee;
+  /* 3 */
+  border-radius: 20px;
 
-/* Hover + Focus */
-.uk-button-warning:hover,
-.uk-button-warning:focus {
-    background-color: @pas-global-color-warning;
-    color: @button-danger-hover-color;
-    .hook-button-danger-hover;
+  /* 4 */
+  overflow: visible;
+  text-transform: none;
+  /* 7 */
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 40px;
+  vertical-align: middle;
+  font-size: @button-font-size;
+  /* 8 */
+  line-height: @button-line-height;
+  /* 9 */
+  text-align: center;
+  /* 10 */
+  text-decoration: none;
 }
-
-/* OnClick + Active */
-.uk-button-warning:active,
-.uk-button-warning.uk-active {
-    background-color: @pas-global-color-warning;
-    color: @button-danger-active-color;
-    .hook-button-danger-active;
+.pas-button-white:hover , .pas-button-white:active , .pas-button-white:focus{
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 /*
