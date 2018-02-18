@@ -18,7 +18,6 @@ return [
     'menus' => [
 
         'main' => 'Main',
-        'offcanvas' => 'Off-Canvas'
     ],
 
     /**
@@ -38,7 +37,7 @@ return [
 
     'node' => [
 
-      'copyright'   => '<p class="uk-margin-remove">Powered by <a href="https://pagekit.com">Pagekit</a> <i class="icofont icofont-code-alt"></i> Theme Chefs</p>',
+      'cpy'   => '<p class="uk-margin-remove">Powered by <a href="https://pagekit.com">Pagekit</a> <i class="icofont icofont-code-alt"></i> Theme Pagekit-Bcs</p>',
       'hero_image'  => '',
       'light'       => false, // You want text color at white
       'blend'       => false, // Color is Active

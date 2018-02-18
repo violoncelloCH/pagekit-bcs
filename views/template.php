@@ -16,7 +16,7 @@
       <div class="uk-container uk-container-large">
         <div uk-navbar>
             <div class="uk-navbar-left">
-              <a class="uk-navbar-brand" href="<?= $view->url()->get() ?>">
+              <a class="uk-navbar-brand uk-margin-small-left" href="<?= $view->url()->get() ?>">
                 <?php if ($params['logo']) : ?>
                     <img class="" src="<?= $this->escape($params['logo']) ?>" alt="">
                 <?php else : ?>
@@ -24,11 +24,22 @@
                 <?php endif ?>
               </a>
             </div>
-            <div class="uk-navbar-right">
+            <div class="uk-navbar-right uk-visible@m">
               <?php if ($view->menu()->exists('main')): ?>
                 <?= $view->menu('main' , 'build/main-menu.php') ?>
               <?php endif; ?>
-              <a href="#offcanvas" class="pas-button-white">İletişime Geç</a>
+
+              <?php if ($view->position()->exists('navbar')): ?>
+                <?= $view->position('navbar' , 'build/navbar-position.php') ?>
+              <?php endif; ?>
+            </div>
+            <div class="uk-navbar-right uk-hidden@m">
+              <a class="uk-navbar-toggle" href="#offCanvasMenu" uk-toggle>
+                 <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+             </a>
+              <?php if ($view->menu()->exists('main')): ?>
+                <?= $view->menu('main' , 'build/offcanvas-menu.php') ?>
+              <?php endif; ?>
             </div>
         </div>
       </div>
@@ -63,7 +74,7 @@
 
     <?php if ($params['footer'] == false): ?>
       <footer class="uk-padding-small">
-        <?= $params['copyright'] ?>
+        <?= $params['cpy'] ?>
       </footer>
     <?php endif; ?>
 

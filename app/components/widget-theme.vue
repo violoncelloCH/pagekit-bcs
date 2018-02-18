@@ -10,7 +10,7 @@
       </p>
       <p class="uk-form-controls-condensed">
         <label>
-          <input type="checkbox" v-model="widget.theme.padding">
+          <input type="checkbox" value="" v-model="widget.theme.padding">
           No Card Padding
         </label>
       </p>
