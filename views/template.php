@@ -6,8 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?= $view->render('head') ?>
         <?php $view->style('main-style', 'theme:assets/css/theme.min.css') ?>
-        <?php $view->style('animated', 'theme:assets/css/animate.css') ?>
-        <?php $view->style('icons', 'theme:css/typicons.min.css') ?>
+        <?php $view->style('animated', 'theme:assets/css/animate.min.css') ?>
         <?php $view->script('main-javascript', 'theme:assets/js/uikit.min.js') ?>
     </head>
     <body>
