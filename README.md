@@ -1,20 +1,15 @@
-# Pagekit-Bcs
-This theme for **pagekit**
+![enter image description here](http://res.cloudinary.com/devpenguen/image/upload/v1519030376/pagekit-bcs_i2n7pu.png)
+**Pagekit-Bcs**
 
-Theme Config:
+----------
 
-	Font General:
-  	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&amp;subset=latin-ext" rel="stylesheet">
- 	 	font-family: 'Playfair Display', serif;
+**version** : 1.0.0
+pagekit-bcs for [pagekit](https://pagekit.com) 
 
-	Button Color:
-	http://colorhunt.co/c/107218
+**Icon Set** : [Typicons](https://s-ings.com/typicons/)
 
-	pas-primary            	: #5628b4
-	pas-secondary       		: #d80e70
-	pas-success            	: #e7455f
-	pas-warning           	: #f7b236
+**Animation** : [Animated](https://daneden.github.io/animate.css/)
 
-Example Web Site:
+---
+but ~~typcn typcn~~-social-skype not **pas pas**-social-skype
 
-    wepresent.wetransfer.com
