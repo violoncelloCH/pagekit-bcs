@@ -6,3 +6,6 @@
 **version** : 1.0.0
 pagekit-bcs for [pagekit](https://pagekit.com) 
 
+**Icon Set** : [Typicons](http://s-ings.com/typicons/)
+but ~~typcn typcn~~-social-skype not **pas pas**-social-skype
+
