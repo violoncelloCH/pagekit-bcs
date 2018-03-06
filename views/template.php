@@ -10,6 +10,10 @@
         <?php $view->script('main-javascript', 'theme:assets/js/uikit.min.js') ?>
     </head>
     <body>
+    
+    <?php if ($view->position()->exists('hero')) : ?>
+        <div class="uk-height-viewport">
+    <?php endif; ?>
 
     <nav class="uk-navbar-container">
       <div class="uk-container uk-container-large">
@@ -46,6 +50,7 @@
 
     <?php if ($view->position()->exists('hero')) : ?>
       <?= $view->position('hero' , 'build/hero-position.php') ?>
+        </div>
     <?php else: ?>
       <div class="uk-margin-small-top"></div>
     <?php endif; ?>
