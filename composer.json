@@ -1,7 +1,7 @@
 {
     "name": "pastheme/pagekit-bcs",
     "type": "pagekit-theme",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "title": "pagekit-bcs",
     "description": "Pagekit-Bcs for Pagekit",
     "license": "MIT",
