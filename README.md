@@ -3,7 +3,7 @@
 
 ----------
 
-**version** : 1.0.0
+**version** : 1.0.1
 pagekit-bcs for [pagekit](https://pagekit.com) 
 
 **Icon Set** : [Typicons](https://s-ings.com/typicons/)
